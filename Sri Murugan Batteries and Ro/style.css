@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding: 40px;
+    width: 97.2%;
+    position: fixed;
+}
+.logo{
+    margin-left: 10px;
+    color: rgb(202, 193, 193);
+    font-family: Brush Script MT;
+    font-weight:100;
+    font-size: xx-large;
+    text-decoration: none;
+}
+nav a{
+    margin-left: 40px;
+    margin-right: 20px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    color: rgb(202, 193, 193);
+    transition: 0.15s ease-in-out;
+}
+
+nav a.active{
+    border-style: solid;
+    border-color: none;
+}
+section{
+    background-image:url("battery1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+    color: black;
+    border-color: black;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+#home{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    transition: 0.5s ease-in-out;
+}
+#home h1{
+    padding-left: 50%;
+    width: 100%;
+    text-align: center;
+    font-weight: 1000px;
+    color: rgb(202, 193, 193);
+}
+#home p{
+    padding-top: 5%;
+    padding-left: 50%;
+    width: 100%;
+    text-align: center;
+    color:rgb(228, 222, 222);
+    opacity: 0;
+}
+.slideleft{
+    animation: slideleft 0.8s linear forwards;
+}
+.slideup{
+    animation: slideup 0.8s linear forwards;
+}
+@keyframes slideleft{
+    0%{
+        transform: translate(100px);
+        opacity:0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity:1;
+    }
+}
+p.slideleft{
+    animation-delay: 0.7s;
+}
+#about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: -15px;
+}
+#about .aboutheading{
+    height: 85vh;
+    width: 30%;
+    margin-top: 15%;
+    margin-left: 20%;
+    border-bottom-style: hidden;
+}
+.aboutheading img{
+    width: 100%;
+    height: 30vh;
+    margin-left: 100%;
+    margin-top: -65%;
+}
+#about h1{
+    color:rgb(202, 193, 193);
+    text-align: center;
+    margin-top: 60%;
+    font-size: 300%;
+    font-weight: 1000;
+}
+#about p{
+    margin-right: 200%;
+    width: 80%;
+    color: rgb(228, 222, 222);
+    font-size: 85%;
+    text-align: justify;
+}
+#services{
+    display: block;
+}
+#services h2{
+    padding-top: 7%;
+    text-align: center;
+    color:rgb(202, 193, 193);
+}
+#services h3{
+    margin-left: 10%;
+    color: rgb(202, 193, 193);
+}
+#services p{
+    padding:0% 12%;
+    font-size: 27px;
+    color: rgb(202, 193, 193);
+}
+#custom h1{
+    padding-top:10%;
+    color: rgb(202, 193, 193);
+    padding-left: 5%;
+}
+#custom p{
+    padding-top: 2%;
+    font-size: 25px;
+    padding-left: 5%;
+    width: 50%;
+    color: rgb(228, 222, 222);
+}
+#custom img{
+    width: 3.5%;
+    height: 7%;
+    padding-left: 5%;
+}
+.p2{
+    font-size: 25px;
+    color: white;
+    padding-left: 20%;
+}
+#custom .box {
+    position: relative;
+    width: 700px;
+    height: 515px;
+    backdrop-filter: blur(2rem);
+    margin-right: 15%;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  #custom .box form {
+    position: absolute;
+    inset: 4px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  #custom .box form h3 {
+    color: white;
+    font-weight: 1000;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 0.1em;
+  }
+  
+  #custom .box form .inputbox {
+    position: relative;
+    width: 340px;
+  }
+  
+  #custom .box form .inputbox input {
+    background-color: transparent;
+    padding: 20px;
+    font-size: 14px;
+    color: white;
+    width: 400px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+  }
+  #custom .box form .inputbox input:hover {
+    font-size: 16px;
+  }
+  
+  #custom .hr {
+    margin: 0px 20px;
+    width: 225px;
+  }
+  
+  #custom .box form h4 {
+    color: white;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+  }
+  
+  #custom .box form .options {
+    position: relative;
+    padding: 0px 30px;
+    font-size: 16px;
+    color: white;
+  }
+  
+  #custom .box form .content {
+    padding: 0px 30px;
+    font-size: 12px;
+  }
+  
+  #custom .box form .center {
+    margin-top: -2%;
+    padding: 5px 20px;
+    border-radius: 50px;
+    height: 5%;
+    width: 50%;
+    font-size: 10px;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #custom .box form .center:hover {
+    background-color: rgb(207, 203, 203);
+  }
